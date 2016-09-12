@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.3'
+
+    defaultConfig{
+        applicationId "com.apothesource.hidingpasswords"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            moduleName = "hidingutil"
+            ldLibs "log"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles 'proguard-rules.pro'
+            buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
+        }
+        release{
+            buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
+        }
+    }
+
+    productFlavors {
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        arm {
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+        mips {
+            ndk {
+                abiFilter "mips"
+            }
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'mips', 'arm'
+            universalApk true
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'jniLibs'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}
