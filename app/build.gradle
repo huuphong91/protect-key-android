@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '23.0.3'
+    compileSdkVersion 28
 
-    defaultConfig{
+    defaultConfig {
         applicationId "com.apothesource.hidingpasswords"
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         ndk {
@@ -21,45 +20,47 @@ android {
             proguardFiles 'proguard-rules.pro'
             buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
         }
-        release{
+        release {
             buildConfigField "String", "hiddenPassword", "\"${hiddenPassword}\""
         }
     }
 
-    productFlavors {
-        x86 {
-            ndk {
-                abiFilter "x86"
-            }
-        }
-        arm {
-            ndk {
-                abiFilter "armeabi-v7a"
-            }
-        }
-        mips {
-            ndk {
-                abiFilter "mips"
-            }
-        }
-    }
-    splits {
-        abi {
-            enable true
-            reset()
-            include 'x86', 'armeabi-v7a', 'mips', 'arm'
-            universalApk true
-        }
-    }
+//    flavorDimensions "version"
+//    productFlavors {
+//        x86 {
+//            ndk {
+//                abiFilter "x86"
+//            }
+//        }
+//        x86_64 {
+//            ndk {
+//                abiFilter "x86_64"
+//            }
+//        }
+//
+//    }
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'x86_64'
+//            universalApk true
+//        }
+//    }
     sourceSets {
         main {
             jniLibs.srcDir 'jniLibs'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('Android.mk')
         }
     }
 }
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }

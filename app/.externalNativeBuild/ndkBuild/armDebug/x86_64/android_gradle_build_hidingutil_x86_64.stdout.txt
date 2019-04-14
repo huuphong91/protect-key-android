@@ -1,0 +1,3 @@
+[x86_64] Compile        : hidingutil <= Base64Util.c
+[x86_64] Compile        : hidingutil <= hidingutil.c
+[x86_64] SharedLibrary  : libhidingutil.so

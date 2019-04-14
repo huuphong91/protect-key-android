@@ -2,13 +2,17 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:+'
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath "com.android.tools.build:gradle-experimental:0.11.1"
+
     }
 }
 allprojects {
     repositories {
         jcenter()
+        google()
     }
 }

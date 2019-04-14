@@ -1,0 +1,36 @@
+{
+  "buildFiles": [
+    "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\huu\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/mips/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\mips\\debug\\lib clean"
+  ],
+  "libraries": {
+    "hidingutil-mipsDebug-x86": {
+      "buildCommand": "C:\\Users\\huu\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/mips/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\mips\\debug\\lib C:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/mips/debug/obj/local/x86/libhidingutil.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "hidingutil",
+      "files": [
+        {
+          "src": "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\main\\jni\\hidingutil\\Base64Util.c",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/huu/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fPIC -O0 -UNDEBUG -fno-limit-debug-info -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\debug\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\armDebug\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\main\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\arm\\jni -IC:/Users/huu/Desktop/protect-key-android/app -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security -mstackrealign"
+        },
+        {
+          "src": "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\main\\jni\\hidingutil\\hidingutil.c",
+          "flags": "-target i686-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/huu/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fPIC -O0 -UNDEBUG -fno-limit-debug-info -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\debug\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\armDebug\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\main\\jni -IC:\\Users\\huu\\Desktop\\protect-key-android\\app\\src\\arm\\jni -IC:/Users/huu/Desktop/protect-key-android/app -DANDROID -Wa,--noexecstack -Wformat -Werror\u003dformat-security -mstackrealign"
+        }
+      ],
+      "output": "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\mips\\debug\\obj\\local\\x86\\libhidingutil.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cCompilerExecutable": "C:\\Users\\huu\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

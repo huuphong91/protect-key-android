@@ -1,0 +1,1 @@
+make: `C:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/debug/obj/local/x86_64/libhidingutil.so' is up to date.

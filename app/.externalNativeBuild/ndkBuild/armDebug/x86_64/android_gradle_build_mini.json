@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\huu\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/arm/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\arm\\debug\\lib clean"
+  ],
+  "libraries": {
+    "hidingutil-armDebug-x86_64": {
+      "artifactName": "hidingutil",
+      "buildCommand": "C:\\Users\\huu\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\Android.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/arm/debug/obj NDK_LIBS_OUT\u003dC:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\arm\\debug\\lib C:/Users/huu/Desktop/protect-key-android/app/build/intermediates/ndkBuild/arm/debug/obj/local/x86_64/libhidingutil.so",
+      "abi": "x86_64",
+      "output": "C:\\Users\\huu\\Desktop\\protect-key-android\\app\\build\\intermediates\\ndkBuild\\arm\\debug\\obj\\local\\x86_64\\libhidingutil.so"
+    }
+  }
+}
